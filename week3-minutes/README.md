@@ -57,7 +57,7 @@ Week 3 moves to open-source models on Google Colab: Hugging Face pipelines, toke
 ## Cost per run
 
 - **Ollama:** free, on your machine. `llama3.2` (3B) needs about 2 GB of memory.
-- **Hugging Face router:** billed per token by the provider that serves the model; the sample transcript is about 600 tokens in, plus the reply. The CLI prints the token count from the server's report.
+- **Hugging Face router:** billed per token by the provider that serves the model; the sample transcript is about 400 tokens, plus the prompt and the reply. The CLI prints the token count from the server's report.
 
 ## Limits
 

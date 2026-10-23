@@ -18,7 +18,7 @@ This repo is the learning track. The capstone, an **iOS app backed by an LLM ser
 | 1 | Frontier APIs, multi-call pipelines | [Company brochure generator](week1-brochure/) | Gemini or OpenAI behind one adapter, schema-validated outputs, URL hallucination guard, per-page token budget, concurrent fetching with failure isolation, robots.txt, CLI, 48 offline tests; ≈ $0.008 per run | ✅ Done |
 | 2 | Chat UIs, tools / function calling, multimodal | [FlightAI support assistant](week2-flightai/) | Tool schemas and argument checks from one Pydantic model, bounded tool loop, errors returned to the model, human confirmation for bookings, Gradio 6 UI, 27 offline tests | 🟨 Built; live run pending |
 | 3 | Open-source models (Hugging Face) | [Meeting minutes](week3-minutes/) | Runs on Ollama or Hugging Face, JSON repair loop for small models, long transcripts split with overlap, every decision and action item checked against the transcript, 34 offline tests | 🟨 Built; live run pending |
-| 4 | Model selection, code generation, evaluation | — | — | ⬜ Planned |
+| 4 | Model selection, code generation, evaluation | [Python → C++ porting benchmark](week4-codeport/) | Exact output checks on inputs the model never saw, timing measured from outside, compile and run limits, `-O3` instead of `-Ofast` (measured why), leaderboard with failure reasons, 18 tests that compile real C++ | 🟨 Built; live run pending |
 | 5 | Retrieval-augmented generation (RAG) | — | — | ⬜ Planned |
 | 6 | Fine-tuning a frontier model | — | — | ⬜ Planned |
 | 7 | QLoRA fine-tuning an open model | — | — | ⬜ Planned |
@@ -62,6 +62,7 @@ uv run pytest                # offline; no API key needed
 uv run python -m week1_brochure "Hugging Face" https://huggingface.co
 uv run python -m week2_flightai           # opens the FlightAI chat in your browser
 uv run python -m week3_minutes week3-minutes/samples/product-sync.txt   # needs Ollama
+uv run python -m week4_codeport           # needs a C++ compiler
 ```
 
 API calls cost money. Each project README states which models it calls and roughly what one run costs.
