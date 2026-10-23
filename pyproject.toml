@@ -37,11 +37,12 @@ packages = [
     "labkit",
     "week1-brochure/src/week1_brochure",
     "week2-flightai/src/week2_flightai",
+    "week3-minutes/src/week3_minutes",
 ]
 exclude = ["labkit/tests"]
 
 [tool.pytest.ini_options]
-testpaths = ["labkit/tests", "week1-brochure/tests", "week2-flightai/tests"]
+testpaths = ["labkit/tests", "week1-brochure/tests", "week2-flightai/tests", "week3-minutes/tests"]
 asyncio_mode = "auto"
 addopts = "--import-mode=importlib"
 
@@ -58,7 +59,7 @@ target-version = "py311"
 select = ["E", "F", "I", "UP", "B", "SIM", "ASYNC", "RUF"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["labkit", "week1_brochure", "week2_flightai"]
+known-first-party = ["labkit", "week1_brochure", "week2_flightai", "week3_minutes"]
 
 [tool.ruff.lint.per-file-ignores]
 "*.ipynb" = ["E501"]

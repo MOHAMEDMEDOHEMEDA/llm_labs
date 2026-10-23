@@ -1,0 +1,21 @@
+Fictional sample transcript for testing. All people and the company are invented.
+Meeting: Parking app release sync, Tuesday
+
+Nadia: Okay, let's start. Agenda is the 2.4 release, the payment bug, and the onboarding test. Karim, Leila and Sam are here. Youssef sent apologies.
+Karim: The payment bug is fixed on our side. The card form was sending the expiry as MM/YYYY and the gateway wants MM/YY.
+Nadia: Good. Is it in the release branch?
+Karim: Not yet. I'll merge the fix into the release branch by Thursday.
+Leila: QA needs a day after that. I'll run the full payment regression on Friday once Karim's merge is in.
+Nadia: Then we're aiming to submit 2.4 to the App Store on Monday. Any objections?
+Sam: No objection, but Apple review has been slow this month, around three days.
+Nadia: Fine. Decision: we submit 2.4 on Monday, and we don't promise a date to the sales team.
+Sam: On onboarding, the new three-screen flow tested better. Completion went from 61 percent to 74 percent in the test group.
+Nadia: That's a big jump. Do we ship it in 2.4?
+Sam: I'd rather not. It touches the login code and 2.4 is already full.
+Nadia: Agreed. The new onboarding goes into 2.5, not 2.4.
+Leila: Someone should tell support about the payment fix so they can answer tickets.
+Nadia: I'll write to the support team today.
+Karim: One more thing. We might want to look at dark mode at some point.
+Nadia: Let's park dark mode. Not a decision, just an idea for later.
+Sam: I'll send the onboarding test results to everyone by Wednesday.
+Nadia: Great. That's it. Thanks, everyone.
