@@ -4,7 +4,7 @@ My work through Ed Donner's **LLM Engineering** course, rebuilt as maintainable 
 
 This repo is the learning track. The capstone, an **iOS app backed by an LLM service**, lives in its own repository: *(link added when it starts)*.
 
-> **Author:** mohamed magdy — Staff Mobile Engineer (iOS, Flutter, React Native, Android), moving into applied AI.
+> **Author:** mohamed magdy — Senior Mobile Engineer (iOS, Flutter, React Native), moving into applied AI.
 > GitHub: [@MOHAMEDMEDEOHEMEDA](https://github.com/MOHAMEDMEDOHEMEDA)
 
 ---
