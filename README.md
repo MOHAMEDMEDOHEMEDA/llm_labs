@@ -16,7 +16,7 @@ This repo is the learning track. The capstone, an **iOS app backed by an LLM ser
 | Week | Topic | Project | Beyond the course | Status |
 |---|---|---|---|---|
 | 1 | Frontier APIs, multi-call pipelines | [Company brochure generator](week1-brochure/) | Gemini or OpenAI behind one adapter, schema-validated outputs, URL hallucination guard, per-page token budget, concurrent fetching with failure isolation, robots.txt, CLI, 48 offline tests; ≈ $0.008 per run | ✅ Done |
-| 2 | Chat UIs, tools / function calling, multimodal | — | — | ⬜ Planned |
+| 2 | Chat UIs, tools / function calling, multimodal | [FlightAI support assistant](week2-flightai/) | Tool schemas and argument checks from one Pydantic model, bounded tool loop, errors returned to the model, human confirmation for bookings, Gradio 6 UI, 27 offline tests | 🟨 Built; live run pending |
 | 3 | Open-source models (Hugging Face) | — | — | ⬜ Planned |
 | 4 | Model selection, code generation, evaluation | — | — | ⬜ Planned |
 | 5 | Retrieval-augmented generation (RAG) | — | — | ⬜ Planned |
@@ -40,13 +40,14 @@ llm_labs/
 ├── .github/workflows/ci.yml # lint + tests on every push; no secrets needed
 ├── LICENSE                  # MIT, my code
 ├── LICENSES/                # notices for adapted third-party material
-├── labkit/                  # code reused across weeks (fetching), with its tests
+├── labkit/                  # code shared across weeks (fetching, model providers), with tests
 ├── week1-brochure/
 │   ├── README.md            # taught / changed / limits / next
 │   ├── src/week1_brochure/
 │   ├── tests/
 │   └── notebook.ipynb       # walkthrough, committed with outputs stripped
-└── week2-.../
+├── week2-flightai/          # same shape for every week
+└── ...
 ```
 
 ## Running a project
@@ -59,6 +60,7 @@ uv run pre-commit install    # secret scanning + notebook stripping on every com
 cp .env.example .env         # then add your Gemini (or OpenAI) key
 uv run pytest                # offline; no API key needed
 uv run python -m week1_brochure "Hugging Face" https://huggingface.co
+uv run python -m week2_flightai           # opens the FlightAI chat in your browser
 ```
 
 API calls cost money. Each project README states which models it calls and roughly what one run costs.
