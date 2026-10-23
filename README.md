@@ -1,13 +1,11 @@
 # LLM Engineering Lab
 
-[![CI](https://github.com/islamIbrahim89/llm-engineering-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/islamIbrahim89/llm-engineering-lab/actions/workflows/ci.yml)
-
 My work through Ed Donner's **LLM Engineering** course, rebuilt as maintainable Python and extended beyond the course material. Each project lists what the course taught, what I changed, and where it still falls short.
 
 This repo is the learning track. The capstone, an **iOS app backed by an LLM service**, lives in its own repository: *(link added when it starts)*.
 
-> **Author:** Islam Moussa — Staff Mobile Engineer (iOS, Flutter, React Native, Android), moving into applied AI.
-> GitHub: [@islamIbrahim89](https://github.com/islamIbrahim89)
+> **Author:** mohamed magdy — Staff Mobile Engineer (iOS, Flutter, React Native, Android), moving into applied AI.
+> GitHub: [@MOHAMEDMEDEOHEMEDA](https://github.com/MOHAMEDMEDOHEMEDA)
 
 ---
 
