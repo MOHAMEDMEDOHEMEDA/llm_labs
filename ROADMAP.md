@@ -14,13 +14,13 @@ Plan for turning the LLM Engineering course into GitHub work that holds up in a 
 
 ```
 PROJECTS
-<Capstone name> — iOS app + LLM backend                         github.com/islamIbrahim89/<capstone>
+<Capstone name> — iOS app + LLM backend                         github.com/MOHAMEDMEDOHEMEDA/<capstone>
   One line: the problem, for whom.
   One line: architecture (SwiftUI · FastAPI · RAG/agents · on-device model) and one hard decision.
   One line: a measured result (eval score, latency, cost per request, test coverage).
 
 TRAINING
-LLM Engineering (Ed Donner, Udemy) — 8 projects rebuilt and extended   github.com/islamIbrahim89/llm-engineering-lab
+LLM Engineering (Ed Donner, Udemy) — 8 projects rebuilt and extended   github.com/MOHAMEDMEDOHEMEDA/llm_labs
 ```
 
 ---

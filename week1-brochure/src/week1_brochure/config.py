@@ -28,8 +28,8 @@ PROVIDERS = {
         name="gemini",
         key_vars=("GEMINI_API_KEY", "GOOGLE_API_KEY"),
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-        link_model="gemini-2.5-flash-lite",
-        writer_model="gemini-2.8-flash",
+        link_model="gemini-3.5-flash-lite",
+        writer_model="gemini-3.8-flash",
     ),
     "openai": Provider(
         name="openai",

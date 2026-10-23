@@ -15,7 +15,7 @@ from urllib.robotparser import RobotFileParser
 import httpx
 from bs4 import BeautifulSoup
 
-USER_AGENT = "llm-engineering-lab/0.1 (+https://github.com/islamIbrahim89/llm-engineering-lab)"
+USER_AGENT = "llm-labs/0.1 (+https://github.com/MOHAMEDMEDOHEMEDA/llm_labs)"
 DEFAULT_MAX_BYTES = 2_000_000
 
 _HTML_TYPES = ("text/html", "application/xhtml+xml")

@@ -1,12 +1,14 @@
 # LLM Engineering Lab
 
+[![CI](https://github.com/MOHAMEDMEDOHEMEDA/llm_labs/actions/workflows/ci.yml/badge.svg)](https://github.com/MOHAMEDMEDOHEMEDA/llm_labs/actions/workflows/ci.yml)
+
 My work through Ed Donner's **LLM Engineering** course, rebuilt as maintainable Python and extended beyond the course material. Each project lists what the course taught, what I changed, and where it still falls short.
 
-This repo is the learning track. The capstone, an **iOS app backed by an LLM service**, lives in its own repository: *(link added when it starts)*.
+This repo is the learning track. The capstone, an **iOS app backed by an LLM service**, will live in its own repository when development begins.
 
-> **Author:** mohamed magdy — Senior Mobile Engineer (iOS, Flutter, React Native), moving into applied AI.
-> GitHub: [@MOHAMEDMEDEOHEMEDA](https://github.com/MOHAMEDMEDOHEMEDA)
-
+> **Author:** Mohamed Magdy — iOS Developer | Swift, SwiftUI, Flutter, React Native, moving into applied AI.
+>
+> GitHub: [@MOHAMEDMEDOHEMEDA](https://github.com/MOHAMEDMEDOHEMEDA)
 ---
 
 ## Projects
@@ -29,7 +31,7 @@ Status key: ⬜ planned · 🟨 in progress · ✅ done (has tests and a project
 ## Repository layout
 
 ```
-llm-engineering-lab/
+llm_labs/
 ├── README.md
 ├── ROADMAP.md               # plan, rules, capstone direction
 ├── pyproject.toml / uv.lock
@@ -50,8 +52,8 @@ llm-engineering-lab/
 ## Running a project
 
 ```bash
-git clone https://github.com/islamIbrahim89/llm-engineering-lab.git
-cd llm-engineering-lab
+git clone https://github.com/MOHAMEDMEDOHEMEDA/llm_labs.git
+cd llm_labs
 uv sync                      # creates .venv with runtime and dev dependencies
 uv run pre-commit install    # secret scanning + notebook stripping on every commit
 cp .env.example .env         # then add your Gemini (or OpenAI) key
